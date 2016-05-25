@@ -217,7 +217,7 @@ figure {
   background: #e7e7e7;
   margin-left: auto;
   margin-right: auto;
-  max-width: 90%;
+  max-width: 80%;
   width: 100%;
 }
 
@@ -231,7 +231,7 @@ figure {
   width: 100%;
 }
 .grid-half {
-  height: 425px;
+  height: 500px;
   width: 50%;
   float: left;
   display: flex !important;
@@ -456,6 +456,7 @@ footer p {
  * Add columns to grid on bigger screens
  */
 @media (max-width: 1360px) {
+
 h1 {
   font-size: 1.7em;
 }
@@ -465,6 +466,9 @@ h1 {
 
 }
 @media (max-width: 1100px) {
+.container {
+  max-width: 90%;
+}
 h1 {
   font-size: 1.3em;
 }
@@ -474,6 +478,9 @@ h1 {
 }
 
 @media (max-width: 770px) {
+.container {
+  max-width: 90%;
+}
 .header {
   padding: 75px 0;
 
