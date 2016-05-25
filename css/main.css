@@ -272,9 +272,9 @@ figure {
   background: #e7e7e7;
 }
 .header {
-  /*background-image: url('http://brickfish.com/wp-content/uploads/2016/05.jpg');
+  background-image: url('http://brickfish.com/wp-content/uploads/2016/05/header-img-1.jpg');
   background-size: cover;
-  background-position: 50%, 50%;*/
+  background-position: 50%, 50%;
   background-color: #cbcbcb;
   padding: 60px 0;
 }
@@ -319,11 +319,10 @@ p {
 }
 .services {
   display: flex;
-  /*background: url('http://brickfish.com/wp-content/uploads/2016/05/footer-1.jpg');
+  background: url('http://brickfish.com/wp-content/uploads/2016/05/services.jpg');
   background-size: cover;
   background-position: 50%, 50%;
-  text-align: center;*/
-  background-color: #cbcbcb;
+  text-align: center;
   padding: 75px 10px;
 }
 .services-text {
