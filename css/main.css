@@ -317,6 +317,13 @@ p {
   margin-bottom: 10%;
   margin-left: 25px;
 }
+.text-only {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+  margin-bottom: 15.2%;
+  margin-left: 25px;
+}
 .services {
   display: flex;
   background: url('http://brickfish.com/wp-content/uploads/2016/05/services.jpg');
