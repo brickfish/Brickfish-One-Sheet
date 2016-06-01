@@ -477,6 +477,16 @@ h1 {
 }
 }
 
+@media (min-width: 771px) and (max-width: 925px) {
+ p {
+  font-size:16px;
+ }
+ .costco {
+ background-position-x: -50px;
+ }
+ 
+}
+
 @media (max-width: 770px) {
 .container {
   max-width: 90%;
@@ -492,6 +502,9 @@ h1 {
 h1 {
   font-size: 2em;
 }
+ p {
+  font-size:20px;
+ }
 .costco {
     background-repeat: no-repeat;
   background-size: contain;
