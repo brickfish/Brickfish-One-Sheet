@@ -27,31 +27,31 @@
         <script type="text/javascript" src="js/main.js"></script>
 
        <script type="text/javascript">
-          
+
   $(document).ready(function() {
-    
+
     /* Every time the window is scrolled ... */
     $(window).scroll( function(){
-    
+
         /* Check the location of each desired element */
         $('.hideme').each( function(i){
-            
+
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
+
             /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object ){
-                
-                $(this).animate({'opacity':'1'},700); 
-                    
+
+                $(this).animate({'opacity':'1'},700);
+
             }
-            
-        }); 
-    
+
+        });
+
     });
-    
+
 });
-        </script> 
+        </script>
     </head>
 
     <body>
@@ -108,7 +108,7 @@
 
 
                   <div class="grid-3 costco">
-                  
+
                     <div class="text hideme">
                       <h1 style="color:#262626">COSTCO:<br>SAVINGS TOO BIG</h1>
                       <p style="color:#808080">Social Referral Program<br><span style="font-family: 'BrandonGrotesqueWeb-Black';color: #c82d2e; font-weight: normal;letter-spacing: 1px">$8.2M</span> in Sales</p>
@@ -117,20 +117,20 @@
                     </div>
                     </div>
    					</div>
-   					
-   					
-                  
+
+
+
                   <div class="grid-3 firestone">
                     <div class="text-only hideme">
                       <h1>FIRESTONE:<br>REAL-TIME MARKETING</h1>
                       <p>Outreach Strategy<br><span style="font-family: 'BrandonGrotesqueWeb-Black';color: #c82d2e; font-weight: normal;letter-spacing: 1px">3.4K</span> Monthly Personalized Replies</p>
                     </div>
                   </div>
-                  
+
             </section>
 
             <section class="row cs-row">
-                    
+
             <div class="grid-3 hertz">
                     <div class="text hideme">
                       <h1 style="color:#262626">HERTZ:<br>SPRING BREAK</h1>
@@ -138,10 +138,10 @@
 
                     <div class="cta">
                         <a href="http://brickfish.com/hertz-spring-break/" target="_blank" class="button">VIEW</a>
-                    </div> 
-                    </div>                
+                    </div>
+                    </div>
                   </div>
-            
+
             <div class="grid-3 trolli">
                    <div class="text hideme">
                       <h1>TROLLI:<br>EVIL TWINS</h1>
@@ -152,7 +152,7 @@
                     </div>
                     </div>
                   </div>
-            
+
 			<div class="grid-3 topco">
                     <div class="text hideme">
                       <h1 style="color:#262626">TOPCO:<br>BRAND WEBSITES</h1>
@@ -172,7 +172,7 @@
         <section class="row">
              <div class=" grid-full services">
                   <div class="services-text hideme">
-                   
+
                     <div class="cta-big">
                         <a href="mailto:maria.papasotiriou@brickfish.com" target="_blank" class="button-big">LET'S CONNECT</a>
                     </div>
@@ -182,10 +182,10 @@
 
             <footer>
               <p>brickfish.com  <span style="color: #c82d2e;">&middot;</span>  855 282 4500  <span style="color: #c82d2e;">&middot;</span>  info@brickfish.com  <span style="color: #c82d2e;">&middot;</span>  209 W Jackson Ave 3rd Floor<br>
-©Copyright 2014 Brickfish. All Rights Reserved</p>  
+©Copyright 2014 Brickfish. All Rights Reserved</p>
             </footer>
 
-             
+
         </section>
 
 
@@ -195,7 +195,16 @@
         <!-- Javascript -->
         <!-- In the footer for better performance -->
 
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+          ga('create', 'UA-23421662-18', 'auto');
+          ga('send', 'pageview');
+
+        </script>
     </body>
 
 </html>
