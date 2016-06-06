@@ -215,9 +215,6 @@ figure {
 /* line 9, /Users/cferdinandi/Sites/kraken/src/sass/components/_grid.scss */
 .container {
   background: #e7e7e7;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 80%;
   width: 100%;
 }
 
@@ -236,9 +233,73 @@ figure {
   float: left;
   display: flex !important;
 }
+.grid-3 {
+	width: 100%;
+	height: 400px;
+}
+@media all and (min-width: 768px) {
+	.grid-3 {
+		width: 33.3%;
+		float: left;
+		height: 400px;
+	/* 	display: flex!important; */
+	}
+}
+@media all and (min-width: 992px) {
+	.add-sm p {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+@media all and (min-width: 1200px) {
+	.add-sm p {
+		padding-left: 75px;
+		padding-right: 75px;
+	}
+}
+
+.intro-p {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.header-add {
+	width: 100%;
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.45);
+    padding-bottom: 40px;
+}
+.header .header-add h2 {
+	text-align: center;
+	margin-bottom: 5px;
+}
+.header .header-add p {
+	width: 100%;
+}
+.header .header-add .grid-3 {
+	height: auto;
+}
+
+.cs-row .grid-3 {
+	display:flex;
+}
 .neiman {
   background-image: url('http://brickfish.com/wp-content/uploads/2016/05/NM-1.jpg');
   background-size: cover;
+}
+@media all and (min-width: 768px) {
+	.neiman h1 {
+		width: 240px;
+	}
+}
+@media all and (min-width: 992px) {
+	.neiman h1 {
+		width: 290px;
+	}
+}
+@media all and (min-width: 1200px) {
+	.neiman h1 {
+		width: 310px;
+	}
 }
 .firestone {
   background-image: url('http://brickfish.com/wp-content/uploads/2016/05/firestone2.jpg');
@@ -251,10 +312,61 @@ figure {
   background-position: 50%, 50%;
 }
 .costco {
-  background-image: url('http://brickfish.com/wp-content/uploads/2016/06/costco-33.jpg');
-    background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom right;
+		background-image: url('http://brickfish.com/wp-content/uploads/2016/06/Costco_MobileMockUp-New_2.png');
+	    background-repeat: no-repeat;
+	    background-size: 70%;
+	    background-position: 132px -12px;
+	}
+	@media all and (min-width: 768px) {
+		.costco {
+			background-size: 95%;
+			background-position: top center;
+		}
+		.costco h1 {
+			width: 60%;
+		}
+	}
+	@media all and (min-width: 992px) {
+		.costco {
+			background-size: 80%;
+			background-position: top center;
+		}
+		.costco h1 {
+			width: 50%;
+		}
+	}
+	@media all and (min-width: 1200px) {
+		.costco {
+		  background-size: 90%;
+		  background-position: 42px -12px;
+		}
+		.costco h1 {
+			width: 180px;
+		}
+	}
+	@media all and (min-width: 1600px) {
+		.costco {
+		  background-size: 90%;
+		  background-position: 42px -12px;
+		}
+		.costco h1 {
+			width: 100%;
+		}
+	}
+@media all and (min-width: 1475px) {
+	.costco {
+	  background-size: contain;
+	  background-position: bottom right;
+	}
+}
+.costco .text {
+	width: 100%;
+    height: 100%;
+    padding-bottom: 10%;
+    padding-left: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 0;
+    margin-left: 0;
 }
 .hertz {
   background-image: url('http://brickfish.com/wp-content/uploads/2016/05/hertz2-1.jpg');
@@ -262,11 +374,62 @@ figure {
   background-size: contain;
   background-position: top right;
 }
+@media all and (min-width: 920px) {
+	.hertz h1 {
+		width: 200px;
+	}
+}
+@media all and (min-width: 992px) {
+	.hertz {
+		background-position: right -50px;
+	}
+}
+@media all and (min-width: 1400px) {
+	.hertz h1 {
+		width: 100%;
+	}
+}
+.hertz .text {
+	width: 100%;
+    height: 100%;
+    padding-bottom: 10%;
+    padding-left: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 0;
+    margin-left: 0;
+}
 .topco {
   background-image: url('http://brickfish.com/wp-content/uploads/2016/05/topco.jpg');
     background-repeat: no-repeat;
   background-size: contain;
   background-position: top right;
+}
+.topco h1 {
+	width: 168px;
+}
+@media all and (min-width: 482px) {
+	.topco h1 {
+		width: 200px;
+	}
+}
+@media all and (min-width: 920px) {
+	.topco h1 {
+		width: 200px;
+	}
+}
+@media all and (min-width: 1630px) {
+	.topco h1 {
+		width: 100%;
+	}
+}
+.topco .text {
+	width: 100%;
+    height: 100%;
+    padding-bottom: 10%;
+    padding-left: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 0;
+    margin-left: 0;
 }
 .grey {
   background: #e7e7e7;
@@ -302,6 +465,11 @@ h1{
   -webkit-margin-before: 0 !important;
   -webkit-margin-after: 0 !important;
 }
+h2 {
+	font-family: 'BrandonGrotesqueWeb-Black';
+	font-size: 2em;
+	font-weight: 400;
+}
 p {
   font-weight: 300;
   color: #e9e9e9;
@@ -310,6 +478,12 @@ p {
   -webkit-margin-before: 0 !important;
   -webkit-margin-after: 0 !important;
 }
+
+.h1-addareas {
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
 .text {
   display: flex !important;
   flex-direction: column !important;
@@ -465,7 +639,10 @@ footer p {
 @media (max-width: 1360px) {
 
 h1 {
-  font-size: 1.5em;
+  font-size: 1.9em;
+}
+h2 {
+	font-size: 1.5em;
 }
 .services p {
   font-size: 16px;
@@ -473,11 +650,11 @@ h1 {
 
 }
 @media (max-width: 1100px) {
-.container {
-  max-width: 90%;
-}
 h1 {
-  font-size: 1.3em;
+  font-size: 1.7em;
+}
+h2 {
+	font-size: 1.3em;
 }
 .services p {
   font-size: 16px;
@@ -496,7 +673,7 @@ h1 {
 
 @media (max-width: 770px) {
 .container {
-  max-width: 90%;
+  max-width: 100%;
 }
 .header {
   padding: 75px 0;
@@ -507,7 +684,10 @@ h1 {
   width: 100%;
 }
 h1 {
-  font-size: 2em;
+  font-size: 1.5em;
+}
+h2 {
+	font-size: 1.7em;
 }
  p {
   font-size:20px;
@@ -520,10 +700,11 @@ h1 {
 .hertz {
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top right;
+  background-position: right -50px;
 }
 
 }
+
 @media (max-width: 481px) {
 .container {
   max-width: 100%;
@@ -551,3 +732,5 @@ h1 {
 }
   
 }
+
+
